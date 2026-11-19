@@ -96,12 +96,21 @@
   },
   "trustblock": {
     "name": "Trustblock",
-    "url": "https://app.trustblock.run/?utm_source=blockscout&searchTerm={address}",
+    "url": "https://app.trustblock.run/address/{chainId}/{addressLowercase}?utm_source=blockscout",
     "icon": "https://raw.githubusercontent.com/blockscout/frontend-configs/main/configs/widgets/logos/trustblock.svg",
     "title": "Audits",
     "hint": "Shows smart contract audits verified and recorded on-chain via Trustblock, a Web3 protocol for audit transparency",
     "valuePath": "auditsNumber",
-    "pages": ["contract", "token"]
+    "pages": ["contract", "token"],
+    "chainIds": {
+      "1": "ethereum",
+      "10": "optimism",
+      "137": "polygon",
+      "324": "zksync",
+      "8453": "base",
+      "42161": "arbitrum",
+      "534352": "scroll"
+    }
   },
   "smartmuv": {
     "name": "SmartMuv",
