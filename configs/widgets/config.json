@@ -99,7 +99,7 @@
     "url": "https://app.trustblock.run/address/{chainId}/{addressLowercase}?utm_source=blockscout",
     "icon": "https://raw.githubusercontent.com/blockscout/frontend-configs/main/configs/widgets/logos/trustblock.svg",
     "title": "Audits",
-    "hint": "Shows smart contract audits verified and recorded on-chain via Trustblock, a Web3 protocol for audit transparency",
+    "hint": "Audit reports linked to this contract, with the firm and the date",
     "valuePath": "auditsNumber",
     "pages": ["contract", "token"],
     "chainIds": {
